@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'blackjack-webfont';
+    src: url('blackjack_font/blackjack-webfont.eot') format('eot'),
+         url('blackjack_font/blackjack-webfont.woff') format('woff'),
+         url('blackjack_font/blackjack-webfont.ttf') format('truetype'),
+         url('blackjack_font/blackjack-webfont.svg') format('svg');
+}
+
+body {
+	display: flex;
+	flex-direction: row;
+}
+
+
+		/* Liséré à gauche */
+aside {
+	background: url("pictures/bottom_background.jpg");
+	background-size: contain;
+	height: 100vh;
+	width: 15%;
+	margin-right: 1.2em;
+	border-radius: 7px; 
+}
+
+		/* Tout le côté droit de la page */
+
+section {
+	height: auto;
+	width: 83%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Le haut */
+header {
+	height: 125px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#text {
+	flex: 4;
+	font-family: blackjack-webfont, sans-serif;
+	color: #edce55;
+	font-family: blackjack-webfont, sans-serif;
+	text-align: center;
+	text-shadow: 0.5px 0.5px 0.1px #000000;
+}
+
+#text h1 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+
+#text p {
+	font-size: 1.4em;
+	margin-top: 0;
+}
+
+header a {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+header img {
+	border: 1px solid black;
+}
+
+/* 3 colonnes */
+#main {
+	display: flex;
+	font-family: Tahoma, sans-serif; 
+}
+
+#main h2 {
+	font-size: 1em;
+	text-align: center;
+	background-color: #edce55;
+	border-radius: 5px;
+	padding: 5px 0 5px 0;
+	margin-right: 15px;
+	margin-left: 15px; 
+	border: 1px solid black;
+}
+
+#main ul {
+	font-size: 0.9em;
+}
+
+.colcol {
+	width: 33%;
+}
+
+/* For mobile use */
+
+@media all and (max-width: 1024px) {
+	body {
+		width: 100%;
+	}
+
+	aside {
+		display: none;
+	}
+
+	section {
+		width: 100%;
+		margin-right: 15px;
+	}
+
+	#main {
+		flex-direction: column;
+	}
+	
+	#main h2 {
+		margin: 0;
+	}
+
+	.colcol {
+		width: 100%;
+	}
+
+
+}
+
+
+
+
+
